@@ -1,139 +1,163 @@
-*{
-    --primary-color:#242E52;
-    --text-color: #ffffff;
-    --button-color: #01FE7F;
-    --button-hover-color:#00d369;
-    --buy-button-text-color: #000;
-    --price--bg: #010101;
-    --clancoins-border: 1px solid #8e9ba9;
-    --font-family:"Roboto", sans-serif;
-    --font-weight:400;
-    --description-text-size:18px;
-    --padding: 0.5rem;
+* {
+  --primary-color: #242e52;
+  --text-color: #ffffff;
+  --button-color: #01fe7f;
+  --button-hover-color: #00d369;
+  --buy-button-text-color: #000;
+  --price--bg: #010101;
+  --clancoins-border: 1px solid #8e9ba9;
+  --font-family: "Roboto", sans-serif;
+  --font-weight: 400;
+  --description-text-size: 18px;
+  --padding: 0.5rem;
 }
 
-.container-offers{
-    width: 100%;
-    max-width: 1182px;
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(auto-fill, minmax(min(100%,15rem),1fr));
-}
-
-.card{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.image{
-    background-size: cover;
-    background-position: center;
-    height: 150px;
-    width: 100%;
-}
-
-.description-wrapper{
-    display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-    padding: var(--padding);
-    background-color: var(--primary-color);
+.grid-Jesus .grid-container-offers {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  padding: var(--padding);
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr));
 
 }
 
-.description{
-    background-color: var(--primary-color);
-    font-family: var(--font-family);
-    font-size: var(--description-text-size);
-    font-weight: var(--font-weight);
-    padding: var(--padding);
-    max-height: 42px;
-    color:var(--text-color);
-    word-wrap: break-word;
+.grid-Jesus .flex-card {
+  display: flex;
+  flex-direction: column;
 }
 
-.platform{
-    padding:var(--padding);
-    margin-top: 0;
-    margin-bottom: 6px;
-    font-family: var(--font-family);
-    font-weight: var(--font-weight);
-    color:var(--text-color);
+.grid-Jesus .image {
+  background-size: cover;
+  background-position: center;
+  height: auto;
+  width: 100%;
 }
 
-.clancoins{
-    padding: var(--padding);
-    border: var(--clancoins-border);
-    color: var(--text-color);
-    font-size: var(--description-text-size);
-    font-weight: var(--font-weight);
-    height: 44px;
-    width: fit-content;
+.grid-Jesus .description-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary-color);
 }
 
-.container-price{
-    display: flex;
-    justify-content: center;
-    height: 36px;
+.grid-Jesus .description {
+  background-color: var(--primary-color);
+  font-family: var(--font-family);
+  font-size: var(--description-text-size);
+  font-weight: var(--font-weight);
+  padding-top: var(--padding);
+  padding-left: var(--padding);
+  max-height: 42px;
+  color: var(--text-color);
+  word-wrap: break-word;
 }
 
-.buy-button{
-    background-color: var(--button-color);
-    width: 50%;
-    height: 36px;
-    border: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.buy-button:hover {
-    background-color: var(--button-hover-color);
-  }
-
-.button-cart:link, .button-cart:visited {
-    text-align: center;
-    text-transform: uppercase;
-    font-family: Arial, sans-serif;
-    color: var(--buy-button-text-color);
-    text-decoration: none;
+.grid-Jesus .platform-wrapper {
+  display: flex;
+  flex: content;
+  justify-content: flex-start;
 }
 
-.buy-button-cart{
-    height: 18px;
-    width: 18px;
-    padding: var(--padding);
+.grid-Jesus .clancoins-wrapper {
+  display: flex;
+  justify-content: flex-end;
 }
 
-.button-cart:hover {
+.grid-Jesus .clancoins-card {
+  border: var(--clancoins-border);
+}
+
+.grid-Jesus .clancoins-coins {
+  display: flex;
+  flex-direction: row;
+}
+
+.grid-Jesus .clancoins-coins-image {
+  height: auto;
+  width: 54px;
+}
+
+.grid-Jesus .clancoins-coins-quantity {
+  width: 50%;
+  color: var(--text-color);
+  font-size: 14px;
+  font-weight: 600;
+  padding: .2rem;
+  text-align: center;
+}
+.grid-Jesus .flex-clancoins {
+  font-size: 9px;
+  font-weight: var(--font-weight);
+  text-transform: uppercase;
+  padding: 2px;
+}
+
+.grid-Jesus .container-price {
+  display: flex;
+  justify-content: center;
+  height: 36px;
+}
+
+.grid-Jesus .buy-button {
+  background-color: var(--button-color);
+  width: 50%;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: var(--padding);
+}
+
+.grid-Jesus .buy-button:hover {
+  background-color: var(--button-hover-color);
+}
+
+.grid-Jesus .button-cart:link,
+.grid-Jesus .button-cart:visited {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Arial, sans-serif;
+  color: var(--buy-button-text-color);
+  text-decoration: none;
+}
+
+.grid-Jesus .buy-button-cart {
+  height: 16px;
+  width: 16px;
+  padding-right: var(--padding);
+}
+
+.grid-Jesus .button-cart:hover {
   color: var(--text-color);
 }
 
-.price-wrapper{
-    background-color: var(--price--bg);
-    font-family: Arial, sans-serif;
-    font-weight: var(--font-weight);
-    text-align: center;
-    justify-content: center;
-    padding: 0.3rem;
-    word-wrap: break-word;
-    width: 50%;
+.grid-Jesus .grid-price-wrapper {
+  background-color: var(--price--bg);
+  font-family: Arial, sans-serif;
+  font-weight: var(--font-weight);
+  text-align: center;
+  justify-content: center;
+  padding-top: 0.5rem;
+  word-wrap: break-word;
+  width: 50%;
 }
 
-.original-price{
-    font-size: 10px;
-    color:#55545A;
-    text-decoration: line-through;
-    padding: 0.2rem;
+.grid-Jesus .grid-original-price {
+  font-size: 9px;
+  color: #55545a;
+  text-decoration: line-through;
+  padding: 0.2rem;
 }
 
-.price{
-    font-size: 16px;
-    color: var(--text-color);
+.grid-Jesus .price {
+  font-size: 15px;
+  color: var(--text-color);
 }
 
-.mxn{
-    font-size: 10px;
-    color:#55545A;
+.grid-Jesus .mxn {
+  font-size: 9px;
+  color: #55545a;
+  padding-right: 0.5rem;
 }

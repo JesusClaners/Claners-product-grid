@@ -3,8 +3,9 @@ import Itemoffer from './Item-offer';
 
 function App() {
   return (
-    
-        <div className="container-offers">
+
+      <div className="grid-Jesus">
+        <div className="grid-container-offers ">
           <Itemoffer className="offer-item"/>
           <Itemoffer className="offer-item"/>
           <Itemoffer className="offer-item"/>
@@ -12,7 +13,7 @@ function App() {
           <Itemoffer className="offer-item"/>
           <Itemoffer className="offer-item"/>
         </div>
-
+    </div>
   );
 }
 
