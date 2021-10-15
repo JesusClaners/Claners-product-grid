@@ -14,7 +14,7 @@ const Itemoffer = () => {
           </div>
   </div>*/}  
 
-        <div className="clancoins-wrapper">
+        {/*<div className="clancoins-wrapper">
           
           <div className="clancoins-card">
             <div className="clancoins-coins">
@@ -30,7 +30,7 @@ const Itemoffer = () => {
           </div>
 
 
-        </div>
+        </div>*/}
 
       </div>
 
