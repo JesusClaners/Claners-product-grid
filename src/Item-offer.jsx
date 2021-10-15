@@ -8,11 +8,11 @@ const Itemoffer = () => {
       <div className="description-wrapper">
         <div className="description">La Tierra Media: Sombras de Mordor</div>
 
-        <div className="platform-wrapper">
+      {/*<div className="platform-wrapper">
           <div className="platform">
             <img src="/xbox.png" alt="{}" />
           </div>
-        </div>
+  </div>*/}  
 
         <div className="clancoins-wrapper">
           
