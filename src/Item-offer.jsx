@@ -39,8 +39,9 @@ const Itemoffer = () => {
         <div className="buy-button">
           <a href="{}" className="button-cart">
             <span>
-              <img src="/cart.png" alt="cart" className="buy-button-cart" />
-              Comprar
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              <span className="buy-button-text">Comprar</span>
+              
             </span>
           </a>
         </div>
