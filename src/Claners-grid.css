@@ -56,6 +56,10 @@
   justify-content: flex-start;
 }
 
+.grid-Jesus .platform-image{
+
+}
+
 .grid-Jesus .clancoins-wrapper {
   display: flex;
   justify-content: flex-end;
@@ -187,7 +191,7 @@
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     background-color: var(--primary-color);
-    height: 90px;
+    height: 110px;
   }
 
   .grid-Jesus .description {
@@ -201,6 +205,33 @@
     color: var(--text-color);
     word-wrap: break-word;
   }
+
+  .grid-Jesus .platform-image{
+    height: 32px;
+    width: 72px;
+  }
+
+  
+
+.grid-Jesus .clancoins-card {
+    border: var(--clancoins-border);
+    height: 44px;
+    text-align: center;
+}
+
+.grid-Jesus .clancoins-coins-image {
+  height: auto;
+  width: 38px;
+}
+
+.grid-Jesus .clancoins-coins-quantity {
+  width: 50%;
+  color: var(--text-color);
+  font-size: 10px;
+  font-weight: 600;
+  padding: 0.2rem;
+  text-align: center;
+}
 
   .grid-Jesus .container-price {
     display: flex;
