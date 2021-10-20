@@ -1,0 +1,79 @@
+* {
+    --dropdown-background: linear-gradient(#000000 28%, #0e111e 80%);
+    --dropdown-background-hover: linear-gradient(#2b2a2a 28%, #1f2747 80%);
+    --text-color: #ffffff;
+    --text-color-hover:#242e52;
+    --dropdown-button-color: #01fe7f; 
+    --dropdown-button-hover-color: #00d369;
+    --dropdown-button-border-color:#6c757d;
+    --font-family: "Roboto", sans-serif;
+    --dropdown-font-size: 1rem;
+    --padding: .375rem .75rem;
+    --speed: 500ms; 
+    --dropdown-menu-bg: #242526;
+  }
+
+  .dropdown-Claners .dropdown-button{
+      display: flex;
+      border: var(--dropdown-button-border-color);
+      height: auto;
+      width: 210px;
+      text-decoration: none;
+  }
+
+  .dropdown-Claners .dropdown-button-text{
+    width: 80%;
+    /*position: relative;*/
+    background: var(--dropdown-background);
+    color: var(--text-color);
+    text-align: center;
+    font-size: var(--dropdown-font-size);
+    padding: var(--padding);
+}
+
+.dropdown-Claners .dropdown-button-text:hover{
+    background: var(--dropdown-background-hover);
+}
+
+.dropdown-Claners .dropdown-button-icon{
+    width: 20%;
+    /*position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 1;*/
+    background-color: var(--dropdown-button-color);
+    text-align: center;
+}
+
+.dropdown-Claners .dropdown-button-icon:hover{
+    background-color: var(--dropdown-button-hover-color);
+}
+
+.dropdown-menu {
+    position: absolute;
+    width: 300px;
+    transform: translateX(1%);
+    background-color: var(--dropdown-menu-bg);
+    padding: 0.5rem 0;
+    transition: height var(--speed) ease;
+    z-index: 1000;
+    margin: .125rem 0 0;
+    border-radius: .25rem;
+    border: 2px solid #242e52;
+    border-top: none;
+}
+
+.dropdown-menu-item {
+    height: fit-content;
+    display: flex;
+    transition: background var(--speed);
+    padding: 0.5rem;  
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.dropdown-menu-item:hover {
+    background-color: var(--dropdown-button-hover-color);
+    color: var(--text-color-hover);
+    text-decoration: none;
+}
