@@ -5,10 +5,10 @@ function Dropdownbutton(props) {
     const [open, setOpen] = useState(false);
   
     return (
-      <div>
-        <a href="#" className="dropdown-button" onClick={() => setOpen(!open)}>
+      <div className="dropdown-container">
+        <a href="#" className="dropdown-button" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="-1" onClick={() => setOpen(!open)}>
             <div className="dropdown-button-text">Agregar al carrito</div>
-            <div className="dropdown-button-icon">"</div>
+            <div className="dropdown-button-icon"></div>
         </a>
   
         {open && props.children}

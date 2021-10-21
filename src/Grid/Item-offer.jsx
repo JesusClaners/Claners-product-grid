@@ -10,7 +10,7 @@ const Itemoffer = () => {
 
       <div className="platform-wrapper">
           <div className="platform">
-            <img src="/xbox.png" alt="{}" className="platform-image" />
+            <img src="https://www.claners.com/app/templates/default/images/platform_icons/xbox.png" alt="{}" className="platform-img"/>
           </div>
   </div>
 

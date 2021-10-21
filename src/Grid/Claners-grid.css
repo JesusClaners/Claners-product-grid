@@ -11,6 +11,7 @@
   --clancoins-quantity-fontsize:14px;
   --padding-clancoins-quantity:0.2rem;
   --padding-clancoins:2px;
+  --font-button-cart:18px;
   --font-family: "Roboto", sans-serif;
   --font-weight: 400;
   --description-text-size: 18px;
@@ -126,7 +127,7 @@
   width: 100%;
   text-align: center;
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: var(--font-button-cart); 
   font-family: Arial, sans-serif;
   color: var(--buy-button-text-color);
   text-decoration: none;
