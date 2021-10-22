@@ -1,0 +1,24 @@
+*{
+    --cart-list-bg: #010619;
+    --cart-list-border: #01FE7F;
+    --cart-item-info-font-color: #01FE7F;
+    --cart-item-info-font-size: 13px;
+    --font-weight-titles:600;
+    --font-weight-cart-quantity: 800;
+    --font-size-platform:10px;
+    --font-size-quantity-title: 10px;
+    --font-size-quantity-amount: 13px;
+    --font-size-subtotal-title: 40px;
+    --font-size-subtotal-amount: 16px;
+    --font-size-checkout-button: 20px;
+    --font-size-remove-item: 10px;
+    --font-size-cart-quantity: 9px;
+}
+
+.Claners-cart .cart-container{
+    display: flex;
+    height: 31px;
+    width: 60px;
+    position: relative;
+    justify-content: flex-end;
+}
